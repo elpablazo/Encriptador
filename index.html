@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto Autómatas</title>
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Estilos Css -->
+    <link rel="stylesheet" href="./src/maincss.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <div class="fluid-container whiteBG">
+            <div class="container px-3" id="barraMenu">
+                <div class="row">
+                    <div class="col-2">
+                        <a href="./"><img src="./src/imgs/ipn-logo.png" alt="Logo IPN" height="50px"></a>
+                    </div>
+                    <div class="col-10 d-flex justify-content-end">
+                        <span class="font-weight-bold mr-2">ESIME Culhuacán</span>
+                        <span>| Teoría de autómatas | Proyecto final</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mainContainer" class="container whiteBG">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="font-weight-bold">No memorices más, mejor encripta</h1>
+                    <p class="mt-4">No volverás a memorizar distintas contraseñas, siempre será la misma pero con una <span class="font-weight-bold">encriptación personalizada</span> para cada página o servicio que utilices.</p>
+                    <a href="comosehizo.html"><button class="styled-button mt-3 mb-5">¿Cómo se hizo?</button></a>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-md-6">
+                    <div class="container" id="encrypter">
+                        <form action="#">
+                            <div class="styled-input">
+                                <textarea v-model="password" required></textarea>
+                                <label>Contraseña</label>
+                                <span></span>
+                            </div>
+                            <div class="styled-input">
+                                <input v-model="website" type="text" required>
+                                <label>Página o servicio</label>
+                                <span></span>
+                            </div>
+                            <p class="mt-5">Contraseña encriptada:</p>
+                            <div class="styled-input">
+                                <textarea readonly>{{ encrypt }}</textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fluid-container grayBG">
+            <div id="mainContainer" class="container">
+                    <div class="text-center m-auto max-w-620">
+                        <h3 class="font-weight-bold">Proyecto final de estudiantes<br>del IPN de la carrera Ing. en Computación</h3>
+                        <p class="mt-4 fz1em">Los estudiantes <span class="font-weight-bold">Obed Enrique Vargas Villarreal</span> y <span class="font-weight-bold">Luis David Aguilar Ramos</span> crearon una manera eficaz de generar contraseñas distintas para cada página o servicio utilizando los conocimientos adquiridos en clase de <span class="font-weight-bold">Teoría de Autómatas</span>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="mainContainer">
+
+        </div>
+    </div>
+
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Vue Js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- Javascript -->
+    <script src="./src/mainjs.js"></script>
+
+
+</body>
+
+</html>

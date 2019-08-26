@@ -1,0 +1,125 @@
+*, html, body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.whiteBG{
+    background-color: #ffffff;
+}
+
+.grayBG{
+    background-color: #eeeeee;
+}
+
+.padding0{
+    padding: 0px;
+}
+
+.max-w-620{
+    max-width: 620px;
+}
+
+#barraMenu{
+    padding: 1rem 0rem;
+}
+
+#mainContainer{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+#encrypter{
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #ffffff;
+
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.125);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.125);
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.125);
+}
+
+
+p{
+    font-size: 1.25em;
+}
+
+.fz1em{
+    font-size: 1em;
+}
+
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75rem;
+    color: #9d2449;
+    top: -0.55rem;
+    left: 1rem;
+    padding: 0rem 0.25rem;
+    transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+    background-color: #ffffff;
+}
+  
+.styled-input {
+    width: 100%;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.styled-input label {
+    color: #999;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+    -webkit-transition: all 0.250s cubic-bezier(0.2, 0, 0.03, 1);
+    -moz-transition: all 0.250s cubic-bezier(0.2, 0, 0.03, 1);
+    transition: all 0.250s cubic-bezier(0.2, 0, 0.03, 1);
+
+    pointer-events: none;
+}
+
+.styled-input input, .styled-input textarea{
+    width: 100%;
+    border: solid 1px #eeeeee;
+    border-radius: 1rem;
+    padding: 1rem;
+    outline: none;
+}
+
+.styled-input input:focus, .styled-input textarea:focus{
+    border: solid 1px #9d2449;
+    outline: none;
+    color: #9d2449;
+}
+
+.styled-button{
+    padding: 0.5rem 1.5rem;
+    background-color: #9d2449;
+    color: #ffffff;
+    font-size: 1.125rem;
+
+    border-radius: 1rem;
+    border: none;
+
+    -webkit-transition: all 0.250s ease-in-out;
+    -moz-transition: all 0.250s ease-in-out;
+    transition: all 0.250s ease-in-out;
+
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(157,36,73,0.5);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(157,36,73,0.5);
+    box-shadow: 0px 0px 18px 0px rgba(157,36,73,0.5);
+}
+
+.styled-button:hover{
+    background-color: #b3345a;
+    
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.styled-button:focus{
+    outline: none;
+}
